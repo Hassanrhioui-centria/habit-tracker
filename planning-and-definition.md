@@ -71,7 +71,9 @@ Backend Structure (Node.js + Express)
   - `PUT /habits/:id/log` → Update completion status  
 
 Database (SQLite)
-- Tables: `users`, `habits`, `habit_logs`, `achievements`  
+- Tables: `users`, `habits`, `habit_logs`, `achievements`
+hostin:
+- `azure cloud provider`
 
 ## Data Flow
 1. User marks habit complete → Frontend sends `PUT` request  
