@@ -72,6 +72,7 @@ Backend Structure (Node.js + Express)
 
 Database (SQLite)
 - Tables: `users`, `habits`, `habit_logs`, `achievements`
+
 hosting
 - `azure cloud provider`
 
