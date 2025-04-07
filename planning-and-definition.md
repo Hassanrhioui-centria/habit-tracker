@@ -1,6 +1,8 @@
 ## Project Phase 1 - Definition and Planning
 
-Project Name: Habit Tracker Web App  
+Project Name: Habit Tracker Web App, the application allow users to tracker their daily habits. 
+              the application offers to the user a streack mode to keep them motivated and productive.
+              
 Technologies: JavaScript, Node.js, Express.js, React, SQLite  
 ## 1. User Personas
 
