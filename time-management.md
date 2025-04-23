@@ -5,3 +5,4 @@
 | 31.03.2025 |     4      | Planning and Definition | - Defined the project<br>- Set environment (technologies)<br>- Started design<br>- User personas<br>- Use case and user flow. |
 | 05.04.2024 |     2      | Planning & Design       | Designed prototype.                                                     |
 | 05.04.2024 |     4     | phase2    | working on project                                                     |
+| 05.04.2024 |     4     | phase    | -created virtual machine and connected it to vs code <br> -created authentification key and clone my work to the repo  |
