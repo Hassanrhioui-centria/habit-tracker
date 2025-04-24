@@ -30,14 +30,18 @@ Primary User: The Busy Professional
 
 ## 2. Use Cases and User Flows
 Core Use Cases
-1.Add a New Habit 
+1. Add a New Habit 
    - User → Opens app → Clicks "Add Habit" → Enters name & category → Saves  
 2. Mark Habit as Complete  
    - User → Opens dashboard → Checks habit checkbox → System logs completion  
 3. View Monthly Progress
    - User → Navigates to Calendar → Sees color-coded habit completion  
-4.Unlock Achievements
-   - User → Completes 3-day streak → System awards "On a Roll" badge  
+4. Unlock Achievements
+   - User → Completes 3-day streak → System awards "On a Roll" badge
+5. Edit and delete added habits.
+   - user is able to delete and add habits
+6. add categories from settings
+   - the user is able to add categories from setting  
 
 ## User Flow Diagram (Simplified)
 Login → Dashboard → [Add Habit / Mark Complete]  
