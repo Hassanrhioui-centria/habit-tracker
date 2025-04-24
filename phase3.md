@@ -34,7 +34,7 @@
   - Show loading indicators  
   - Use `useReducer()` or better state management instead of multiple `useState()` calls
 
-### ✅ Example Improvement You Can Submit:
+### ✅ Example of Improvement Submited:
 
 **Chosen Improvement**: *Improved UI/UX Design*
 
