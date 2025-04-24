@@ -1,4 +1,4 @@
-### ✅ Recommended Improvements:
+### Improvements of some features:
 
 
 #### 1. **Improved UI/UX Design**
