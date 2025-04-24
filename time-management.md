@@ -7,4 +7,4 @@
 | 05.04.2024 |     4     | phase2    | working on project                                                     |
 | 20.04.2024 |     6     | phase2    | working on project                                                     |
 | 21.04.2024 |     4     | phase2    | working on project                                                     |
-| 22.04.2024 |     4     | phase    | -created virtual machine and connected it to vs code <br> -created authentification key and clone my work to the repo  |
+| 22.04.2024 |     4     | phase 2   | -created virtual machine and connected it to vs code <br> -created authentification key and clone my work to the repo  |
