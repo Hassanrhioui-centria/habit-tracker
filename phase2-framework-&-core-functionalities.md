@@ -8,7 +8,6 @@ Project Phase 2 Report: Basic Structure and Main Functionalities
 - Development Tools:
   - npm/yarn: For dependency management.
   - ESLint: For enforcing coding standards and catching potential errors during development.
-  - Babel: For transpiling modern JavaScript (ES6+) into compatible versions.
 2. Backend
 - The backend provides RESTful APIs to handle CRUD operations for habits, categories, and user data.
  Key functionalities include:
