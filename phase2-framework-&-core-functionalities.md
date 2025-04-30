@@ -21,6 +21,7 @@ import Habit from "../models/habitModel";
 const router = express.Router();
 
 // Toggle habit completion
+-
 router.post("/:id/complete", async (req: Request, res: Response) => {
   try {
     const habit = await Habit.findById(req.params.id);
