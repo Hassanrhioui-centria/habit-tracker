@@ -13,7 +13,7 @@ A simple and intuitive habit tracking application built with React, Node.js, Exp
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, JavaScript, Tailwind CSS
+- **Frontend**: React, JavaScript, TypScript Tailwind CSS
 - **Backend**: Node.js, Express
 - **Database**: Mongodb
 
