@@ -1,39 +1,42 @@
 Project Phase 2 Report: Basic Structure and Main Functionalities
 
-1. Environment
-- The project uses a modern development environment with Node.js as the runtime for both backend and frontend. I use TypeScrip, Javascript and TailwindCss for smooth and modern styling.
-- Frontend: Built using React.js, a popular JavaScript library for building user interfaces.
-- Backend: Developed using Express.js, a lightweight framework for handling API requests.
-- Database: Utilizes MongoDB (via Mongoose) for storing user data, habits, categories, and achievements.
-- Development Tools:
-  - npm/yarn: For dependency management.
-  - ESLint: For enforcing coding standards and catching potential errors during development.
-2. Backend
-- The backend provides RESTful APIs to handle CRUD operations for habits, categories, and user data.
- Key functionalities include:
-  - Adding, updating, and deleting habits.
-  - Managing habit categories.
-  - Fetching user-specific data such as progress, achievements, and calendar entries.
-- Routes are modularized and organized in separate files (e.g., `habitRoutes.js`, `categoryRoutes.js`).
+
+Strongly typed Props and State improve maintainability and scalability.
+
+Backend
+Developed using Express.js with TypeScript, ensuring robust API development.
+
+TypeScript type definitions are used for request and response objects to maintain a structured and error-free codebase.
+
+Implements RESTful APIs to handle CRUD operations for habits, categories, and user data.
+
+Database
+Utilizes MongoDB (via Mongoose) for storing user data, habits, categories, and achievements.
+
+TypeScript models and interfaces define the schema structure for consistency.
 - Example of a route implementation:
-  ```javascript
-  // Toggle habit completion
-  router.post('/:id/complete', async (req, res) => {
-    try {
-      const habit = await Habit.findById(req.params.id);
-      if (!habit) return res.status(404).json({ message: 'Habit not found' });
+  ```Typescript
+ import express, { Request, Response } from "express";
+import Habit from "../models/habitModel";
+const router = express.Router();
 
-      habit.isCompletedToday = !habit.isCompletedToday;
-      await habit.save();
+// Toggle habit completion
+router.post("/:id/complete", async (req: Request, res: Response) => {
+  try {
+    const habit = await Habit.findById(req.params.id);
+    if (!habit) return res.status(404).json({ message: "Habit not found" });
 
-      res.json({
-        message: 'Habit toggled successfully',
-        habit,
-      });
-    } catch (err) {
-      res.status(500).json({ message: err.message });
-    }
-  });
+    habit.isCompletedToday = !habit.isCompletedToday;
+    await habit.save();
+
+    res.json({ message: "Habit toggled successfully", habit });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
+export default router;
+
  Example of working backend 
 ![Screenshot 2025-04-21 233051](https://github.com/user-attachments/assets/f97ca8a7-f0c1-4929-8865-3ea56d5aff23)
 
