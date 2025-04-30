@@ -1,29 +1,29 @@
-Project Phase 2 Report: Basic Structure and Main Functionalities
+## Project Phase 2 Report: Basic Structure and Main Functionalities
 
 
 Strongly typed Props and State improve maintainability and scalability.
 
-Backend
+## Backend
 Developed using Express.js with TypeScript, ensuring robust API development.
 
 TypeScript type definitions are used for request and response objects to maintain a structured and error-free codebase.
 
 Implements RESTful APIs to handle CRUD operations for habits, categories, and user data.
 
-Database
+## Database
 Utilizes MongoDB (via Mongoose) for storing user data, habits, categories, and achievements.
 
 TypeScript models and interfaces define the schema structure for consistency.
-- Example of a route implementation:
+## Example of a route implementation:
   
  import express, { Request, Response } from "express";
 import Habit from "../models/habitModel";
 const router = express.Router();
 
-// Toggle habit completion
--
-router.post("/:id/complete", async (req: Request, res: Response) => {
-  try {
+## Toggle habit completion:
+
+      router.post("/:id/complete", async (req: Request, res: Response) => {
+     try {
     const habit = await Habit.findById(req.params.id);
     if (!habit) return res.status(404).json({ message: "Habit not found" });
 
@@ -31,14 +31,14 @@ router.post("/:id/complete", async (req: Request, res: Response) => {
     await habit.save();
 
     res.json({ message: "Habit toggled successfully", habit });
-  } catch (err) {
+     } catch (err) {
     res.status(500).json({ message: err.message });
-  }
-});
+     }
+     });
 
-export default router;
+     export default router;
 
- Example of working backend 
+ ## Example of working backend 
 ![Screenshot 2025-04-21 233051](https://github.com/user-attachments/assets/f97ca8a7-f0c1-4929-8865-3ea56d5aff23)
 
 
