@@ -1,8 +1,5 @@
 ## Project Phase 2 Report: Basic Structure and Main Functionalities
 
-
-Strongly typed Props and State improve maintainability and scalability.
-
 ## Backend
 Developed using Express.js with TypeScript, ensuring robust API development.
 
