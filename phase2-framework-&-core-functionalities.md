@@ -15,7 +15,7 @@ Utilizes MongoDB (via Mongoose) for storing user data, habits, categories, and a
 
 TypeScript models and interfaces define the schema structure for consistency.
 - Example of a route implementation:
-  ```Typescript
+  
  import express, { Request, Response } from "express";
 import Habit from "../models/habitModel";
 const router = express.Router();
