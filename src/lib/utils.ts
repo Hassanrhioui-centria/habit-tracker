@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 // API base URL
-export const API_URL = 'http://localhost:5000/api';
+export const API_URL = 'http://4.210.211.34:5000/api';
 
 // API helper functions
 export async function fetchApi(endpoint: string, options: RequestInit = {}) {
